@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>maven.gatling.demo</groupId>
+    <artifactId>maven.gatling.demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>maven.gatling.demo</name>
+    <url>http://www.icode.sk/</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>Apache Licence, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licences/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Ing. Peter Szatmary</name>
+            <email>peter.szatmary@gmail.com</email>
+            <url>http://www.icode.sk</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+
+
+    <build>
+      <plugins>
+          <plugin>
+              <groupId>io.gatling</groupId>
+              <artifactId>gatling-maven-plugin</artifactId>
+              <version>2.1.7</version>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>execute</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+    </plugins>
+  </build>
+
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.gatling.highcharts</groupId>
+            <artifactId>gatling-charts-highcharts</artifactId>
+            <version>2.1.7</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
