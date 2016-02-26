@@ -1,13 +1,10 @@
 package maven.gatling.demo;
 
 import org.junit.Test;
-
 import static  org.junit.Assert.*;
 
-
-
 /**
- * Unit test for simple App.
+ * Here you can have your traditional Java tests in test/java directory
  */
 public class AppTest {
 
