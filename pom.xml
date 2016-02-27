@@ -9,8 +9,13 @@
     <name>maven.gatling.demo</name>
     <url>http://www.icode.sk/</url>
 
+
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <scala.version>2.11.7</scala.version>
+        <encoding>UTF-8</encoding>
+        <gatling.version>2.1.7</gatling.version>
     </properties>
 
     <licenses>
@@ -41,13 +46,12 @@
     </developers>
 
 
-
     <build>
       <plugins>
           <plugin>
               <groupId>io.gatling</groupId>
               <artifactId>gatling-maven-plugin</artifactId>
-              <version>2.1.7</version>
+              <version>${gatling.version}</version>
               <executions>
                   <execution>
                       <goals>
@@ -73,8 +77,15 @@
         <dependency>
             <groupId>io.gatling.highcharts</groupId>
             <artifactId>gatling-charts-highcharts</artifactId>
-            <version>2.1.7</version>
+            <version>${gatling.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Scala SDK -->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
         </dependency>
 
     </dependencies>
