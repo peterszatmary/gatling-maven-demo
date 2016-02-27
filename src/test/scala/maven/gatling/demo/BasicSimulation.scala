@@ -4,7 +4,6 @@ package maven.gatling.demo
   * Created by nue on 26.2.2016.
   *
   */
-package computerdatabase
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
