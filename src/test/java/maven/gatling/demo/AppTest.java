@@ -10,7 +10,7 @@ public class AppTest {
 
     @Test
     public void unitTest() {
-        assertTrue(true);
+        assertTrue(2 > 0);
     }
 
 }
