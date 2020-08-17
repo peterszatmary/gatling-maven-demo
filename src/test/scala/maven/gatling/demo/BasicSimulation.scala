@@ -1,7 +1,7 @@
 package maven.gatling.demo
 
 /**
-  * Created by nue on 26.2.2016.
+  * Created by peter szatmary on 26.2.2016.
   *
   */
 
