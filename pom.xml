@@ -14,7 +14,7 @@
         <scala.version>2.11.7</scala.version>
         <encoding>UTF-8</encoding>
         <gatling.version>2.1.7</gatling.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <licenses>
